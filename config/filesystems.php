@@ -55,6 +55,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'courseimg' => [
+            'driver' => 'local',
+            'root' => storage_path('app/courseimg'),
+            'url' => env('APP_URL').'/courseimg',
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_KEY'),
